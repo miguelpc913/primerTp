@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/palindromoTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tempetatureConverterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/palindromo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#4A3131"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/palTextChecker"
+        android:layout_width="281dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="200dp"
+        android:autofillHints="@string/palindromo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@id/buttonPalChecker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempetatureConverterTitle" />
+
+    <Button
+        android:id="@+id/buttonPalChecker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="329dp"
+        android:text="@string/palindromoButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/palTextChecker"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/changeToTemperatureConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/changeToTemperature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPalChecker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

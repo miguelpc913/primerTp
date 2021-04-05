@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PrimerTP</string>
+    <string name="palindromo">Palindromo checker!</string>
+    <string name="palindromoButton">Testea el palindromo!</string>
+    <string name="changeToTemperature">Cambiar a temperatura! →</string>
+
+    <string name="tempetatureConverter">Temperature converter!</string>
+    <string name="temperatureChangeToCelcius">Cambia a celcius</string>
+    <string name="temperatureChangeToFahrenheit">Cambia a Fahrenheit</string>
+    <string name="temperatureInstructions">Ingrese temperatura en Celcius</string>
+    <string name="changeToPalindromo">← Cambiar a palindromo checker!</string>
+</resources>
