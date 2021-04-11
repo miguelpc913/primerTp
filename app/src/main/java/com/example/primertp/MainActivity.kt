@@ -1,5 +1,4 @@
 package com.example.primertp
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,17 +8,19 @@ import com.example.primertp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        super.onCreate(savedInstanceState);
+        val binding = ActivityMainBinding.inflate(layoutInflater);
+        setContentView(binding.root);
 
         binding.buttonPalChecker.setOnClickListener(View.OnClickListener {
             val textToCheck : String = binding.palTextChecker.text.toString()
             checkPal(textToCheck.replace("\\s".toRegex(), "").toLowerCase());
         })
+
         binding.changeToTemperatureConverter.setOnClickListener( View.OnClickListener {
-            val i: Intent = Intent(this, Activity_temperatura::class.java)
+            val i: Intent = Intent(this, ActivityTemperatura::class.java)
             startActivity(i)
+            stop
         })
     }
 

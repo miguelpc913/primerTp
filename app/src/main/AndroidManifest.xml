@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_temperatura">
+        <activity android:name=".ActivityTemperatura">
             <intent-filter>
-                <action android:name="android.intent.action.Activity_temperatura" />
+                <action android:name="android.intent.action.ActivityTemperatura" />
 
 
             </intent-filter>
